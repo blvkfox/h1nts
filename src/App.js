@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import "./assets/css/main.css";
+import Index from "./pages/index";
+import MarkUp from "./pages/markup";
+import Styles from "./pages/styles";
+import Javascript from "./pages/javascript";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="w-4/5 mx-auto">
+        <header className="flex justify-between my-4">
+          <div className="navbar-brand">
+            <Link to="/">h1nts</Link>
+          </div>
+          <nav>
+            <ul className="flex">
+              <li className="mr-2">Github</li>
+              <li>Twitter</li>
+            </ul>
+          </nav>
+        </header>
+        <Route path="/" exact render={(props) => <Index />} />
+        <Route path="/mark-up" render={(props) => <MarkUp />} />
+        <Route path="/styles" render={(props) => <Styles />} />
+        <Route path="/javascript" render={(props) => <Javascript />} />
+      </div>
+    </Router>
   );
 }
 
