@@ -120,6 +120,7 @@ const Styles = () => {
             href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
             className="flex bg-black text-white py-2 px-3"
             target="_blank"
+            rel="noreferrer"
           >
             CSS Property reference <i class="ml-2 gg-arrow-right pt-6"></i>
           </a>

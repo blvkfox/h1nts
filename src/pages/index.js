@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Index = () => {
   return (
     <div className="mt-24">
-      <h1 className="text-6xl mb-12"></h1>
+      <h1 className="text-6xl mb-12 hidden">h1nts</h1>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-4 my-4">
         <Link to="/mark-up" className="html text-white py-3 text-center">
           HTML

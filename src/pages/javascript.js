@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 
 const Javascript = () => {
+  useEffect(() => {
+    document.title = "h1nts | Javascript";
+  }, []);
   return (
     <div className="mt-24 max-w-2xl">
       <section>
