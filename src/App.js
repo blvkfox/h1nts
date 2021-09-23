@@ -5,6 +5,7 @@ import Index from "./pages/index";
 import MarkUp from "./pages/markup";
 import Styles from "./pages/styles";
 import Javascript from "./pages/javascript";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
           </div>
           <nav>
             <ul className="flex">
-              <li className="mr-2">Github</li>
+              <Link to="https://github.com/cryptoblvk/h1nts" className="mr-2">
+                Github
+              </Link>
               <li>Twitter</li>
             </ul>
           </nav>
